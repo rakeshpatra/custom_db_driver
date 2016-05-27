@@ -2,7 +2,7 @@ module CustomDbDriver
   class Base
     class << self
       attr_accessor :model
-      
+      #test
       def create_asscociation(model, block)
         @model = model
         class_eval(&block)
