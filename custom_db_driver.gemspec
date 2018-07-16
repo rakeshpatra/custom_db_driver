@@ -9,15 +9,16 @@ Gem::Specification.new do |s|
   s.version     = CustomDbDriver::VERSION
   s.authors     = ["rakeshpatra"]
   s.email       = ["rakesh.patra@mindfiresolutions.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of CustomDbDriver."
-  s.description = "TODO: Description of CustomDbDriver."
+  s.homepage    = "https://github.com/rakeshpatra/custom_db_driver"
+  s.summary     = "Summary of CustomDbDriver."
+  s.description = "Description of CustomDbDriver."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.2.5"
+  s.add_dependency "rails", "~> 4.2.3"
 
-  # s.add_development_dependency "sqlite3"
+  s.add_development_dependency "mysql2"
+  s.add_development_dependency "mongoid"
 end
